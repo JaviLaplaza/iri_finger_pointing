@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>iri_finger_point</name>
+  <name>iri_finger_pointing</name>
   <version>0.0.0</version>
   <description>The iri_finger_point package</description>
 
@@ -59,6 +59,10 @@
   <depend>image_transport</depend>
   <depend>camera_info_manager</depend>
   <depend>sensor_msgs</depend>
+
+  <build_depend>dynamic_reconfigure</build_depend>
+  <build_export_depend>dynamic_reconfigure</build_export_depend>
+  <exec_depend>dynamic_reconfigure</exec_depend>
 
 
   <!-- The export tag contains other, unspecified, tags -->

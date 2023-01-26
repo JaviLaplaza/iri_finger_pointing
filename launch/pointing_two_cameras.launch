@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+   <arg
+   name="camera_id_0"
+   default="0"
+   />
+<arg
+   name="csv_name_0"
+   default="pointing_db_0.csv"
+   />
+<arg
+   name="camera_id_1"
+   default="1"
+   />
+<arg
+   name="csv_name_1"
+   default="pointing_db_1.csv"
+   />
+
+
+  <include file="$(find iri_finger_pointing)/launch/pointing_one_camera.launch">
+	<arg name="camera_id" value="$(arg camera_id_0)" />
+	<arg name="csv_name" value="$(arg csv_name_0)" />
+        <arg name="serial_no" value="841512070858"/>
+        
+  </include>
+  <include file="$(find iri_finger_pointing)/launch/pointing_one_camera.launch">
+	<arg name="camera_id" value="$(arg camera_id_1)" />
+	<arg name="csv_name" value="$(arg csv_name_1)" />
+        <arg name="serial_no" value="831612071569"/>
+  </include>
+</launch>
